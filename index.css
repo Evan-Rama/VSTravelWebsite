@@ -1,0 +1,275 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Lexend', sans-serif; 
+} 
+
+body { 
+    background-color: #E8FDFD; 
+} 
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 30px; 
+    background-color: #E8FDFD; 
+    position: relative; 
+} 
+
+.logo { 
+    position: absolute; 
+    margin-top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 10; 
+} 
+
+.logo img { 
+    height: 200px; 
+} 
+
+nav ul { 
+    display: flex; 
+    list-style: none; 
+} 
+
+nav ul li { 
+    margin: 0 15px; 
+} 
+
+nav ul li a { 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: 600; 
+    font-size: 14px; 
+} 
+
+.auth-buttons { 
+    display: flex; 
+    align-items: center; 
+} 
+
+.sign-in { 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: 600; 
+    margin-right: 15px; 
+    font-size: 14px; 
+} 
+
+.sign-up { 
+    text-decoration: none; 
+    color: white; 
+    background-color: #4361ee; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    font-weight: 600; 
+    font-size: 14px; 
+} 
+
+.hero { 
+    background-image: url('../Asset/nusapenida.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 1000px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 50px; 
+    border-radius: 20px; 
+    margin: 20px 30px; 
+    position: relative; 
+} 
+
+.hero::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)); 
+    border-radius: 20px; 
+} 
+
+.hero-content { 
+    position: relative; 
+    top: -300px; 
+    z-index: 1; 
+    max-width: 600px; 
+    color: #EAEAEA; 
+} 
+
+.hero-content h1 { 
+    font-size: 50px; 
+    margin-top: 40px; 
+    margin-bottom: 35px; 
+    font-weight: 700; 
+    color: #223D47; 
+} 
+
+.hero-content p { 
+    font-size: 18px; 
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    -webkit-text-stroke: 0.1px black; 
+} 
+
+.book-now { 
+    background-color: #FFC107; 
+    color: #000; 
+    border: none; 
+    padding: 12px 25px; 
+    border-radius: 25px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    margin-top: 25px; 
+    font-size: 14px; 
+    font-family: 'Lexend', sans-serif; 
+    transition: background-color 0.3s ease; 
+} 
+
+.book-now:hover{ 
+    background-color: rgb(255, 255, 55); 
+} 
+
+.popular-destinations { 
+    padding: 50px 30px; 
+} 
+
+.popular-destinations h2 { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    color: #333; 
+    font-size: 24px; 
+} 
+
+.destinations-container { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+} 
+
+.destination-card { 
+    background-color: white; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    width: 30%; 
+    transition: transform 0.3s; 
+} 
+
+.destination-card:hover{ 
+    transform: translateY(-5px); 
+} 
+
+.img-container { 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative; 
+} 
+
+.destination-card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+} 
+
+.destination-card h3 { 
+    padding: 15px 15px 10px; 
+    color: #333; 
+} 
+
+.destination-card p { 
+    padding: 0 15px 15px; 
+    color: #666; 
+    font-size: 14px; 
+    line-height: 1.5; 
+} 
+
+footer {
+    background-color: #2FACC2;
+    padding: 30px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-logo { 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+} 
+
+.footer-logo img { 
+    height: 200px; 
+} 
+
+.social-media { 
+    display: flex; 
+    gap: 20px; 
+} 
+
+.social-icon { 
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    font-weight: 600; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 40px; 
+    height: 40px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 50%; 
+    transition: background-color 0.3s; 
+    font-size: 14px; 
+} 
+
+.social-icon:hover { 
+    background-color: rgba(255, 255, 255, 0.4); 
+} 
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        margin: 15px 0;
+    }
+    
+    .auth-buttons {
+        margin-top: 15px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 300px 30px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .destinations-container {
+        flex-direction: column;
+    }
+    
+    .destination-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

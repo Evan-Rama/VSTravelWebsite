@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Now - Tokyo</title>
+    <link rel="stylesheet" href="travel-now.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="destination-page.html">DESTINATION</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../Asset/VS__2_-removebg-preview.png" alt="VSTravel Logo">
+            </a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="sign-in">SIGN IN</a>
+            <a href="#" class="sign-up">SIGN UP</a>
+        </div>
+    </header>
+
+    <main class="travel-container">
+        <div class="destination-details">
+            <h1>Tokyo, Japan</h1>
+
+            <div class="destination-gallery">
+                <div class="main-image">
+                    <img src="../Asset/tokyo.jpg" alt="Main Tokyo Image" class="fade-image">
+                </div>
+
+                <div class="thumbnail-gallery">
+                    <img src="../Asset/tokyo1.jpg" alt="Thumbnail 1">
+                    <img src="../Asset/tokyo2.jpg" alt="Thumbnail 2">
+                    <img src="../Asset/tokyo3.jpg" alt="Thumbnail 3">
+                </div>
+
+                <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="why-choose">
+                <h2>Why Choose VSTravel? 🌴✈️</h2>
+                <ul class="benefits-list">
+                    <li>✓ Wide Destination Choices</li>
+                    <li>✓ Best Price Guarantee</li>
+                    <li>✓ Easy & Fast Booking</li>
+                    <li>✓ 24/7 Customer Support</li>
+                    <li>✓ Trusted & Secure</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <h2>Information</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group phone-input">
+                    <span class="country-code">+62</span>
+                    <input type="tel" placeholder="812-3456-7890" required>
+                </div>
+                <div class="form-group">
+                    <label>Passengers</label>
+                    <div class="passenger-selector">
+                        <div class="passenger-type">
+                            <i class="fas fa-male"></i>
+                            <input type="number" min="0" value="0" required>
+                        </div>
+                        <div class="passenger-type">
+                            <i class="fas fa-female"></i>
+                            <input type="number" min="0" value="0" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group dates">
+                    <div class="date-input">
+                        <label>Departure Date</label>
+                        <div class="date-field">
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="date-input">
+                        <label>Return Date</label>
+                        <div class="date-field">
+                            <input type="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="total-price">Total: Rp.-</p>
+                </div>
+                <button type="submit" class="book-button" id="book-button">BOOK</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="../Asset/VS__2_-removebg-preview.png" alt="VSTravel Logo">
+            </a>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="destination-booking.js"></script>
+</body>
+</html>

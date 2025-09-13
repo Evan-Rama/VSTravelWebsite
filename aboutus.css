@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    background-color: #E8FDFD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #E8FDFD;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.logo img {
+    height: 200px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: white;
+    background-color: #4361ee;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.about-hero {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    text-align: center;
+    width: 100%;
+}
+
+.about-title h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.about-title i {
+    margin-right: 10px;
+    color: #22a6b3;
+}
+
+.first-office-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first-office {
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.first-office:hover{
+    transform: translateY(-5px);
+}
+
+.first-office img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.office-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.office-details h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.office-details p {
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.office-details i {
+    color: #22a6b3;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.about-content {
+    padding: 40px 50px 60px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.content-box {
+    background-color: #e6f7ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.content-box:hover{
+    transform: translateY(-5px);
+}
+
+.content-box h2 {
+    color: #22a6b3;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.content-box p {
+    color: #444;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #2FACC2;
+    padding: 30px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 200px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        margin: 15px 0;
+    }
+    
+    .auth-buttons {
+        margin-top: 15px;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 50px 30px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .destinations-container {
+        flex-direction: column;
+    }
+    
+    .destination-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
